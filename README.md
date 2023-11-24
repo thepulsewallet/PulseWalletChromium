@@ -4,7 +4,7 @@ Pulse Wallet Chromium is an open source browser plugin for the DeFi ecosystem, p
 
 ## Install
 
-You can Download the latest Pulse Wallet Chromium [here](https://github.com/pulsewallet/Pulse-Wallet-Chromium/releases/latest).
+You can Download the latest Pulse Wallet Chromium [here](https://github.com/thepulsewallet/PulseWalletChromium/releases/latest).
 
 ## Guideline for integrating Pulse Wallet Chromium
 
