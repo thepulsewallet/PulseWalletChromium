@@ -269,22 +269,6 @@ const ImportWatchAddress = () => {
             </div>
           )}
         </div>
-        <div className="flex justify-between px-20">
-          <div
-            className="w-[172px] import-watchmode__button"
-            onClick={handleImportByWalletconnect}
-          >
-            <img src={IconWalletconnect} className="icon icon-walletconnect" />
-            {t('page.newAddress.addContacts.scanViaMobileWallet')}
-          </div>
-          <div
-            className="w-[172px] import-watchmode__button"
-            onClick={handleImportByQrcode}
-          >
-            <img src={IconScan} className="icon icon-walletconnect" />
-            {t('page.newAddress.addContacts.scanViaPcCamera')}
-          </div>
-        </div>
       </div>
       <ModalComponent
         closable={false}

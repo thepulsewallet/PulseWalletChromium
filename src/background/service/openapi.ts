@@ -2,7 +2,7 @@ import { INITIAL_OPENAPI_URL, INITIAL_TESTNET_OPENAPI_URL } from '@/constant';
 import { OpenApiService } from '@rabby-wallet/rabby-api';
 import { createPersistStore } from 'background/utils';
 export * from '@rabby-wallet/rabby-api/dist/types';
-
+import fetchAdapter from '@vespaiach/axios-fetch-adapter';
 const testnetStore = new (class TestnetStore {
   store!: { host: string; testnetHost: string };
 
@@ -38,6 +38,7 @@ const service = new OpenApiService({
           testnetHost: INITIAL_TESTNET_OPENAPI_URL,
         },
       }),
+  adapter: fetchAdapter as any,
 });
 
 export const testnetOpenapiService = new OpenApiService({
@@ -47,6 +48,7 @@ export const testnetOpenapiService = new OpenApiService({
         testnetHost: INITIAL_TESTNET_OPENAPI_URL,
       }
     : testnetStore,
+  adapter: fetchAdapter as any,
 });
 
 export default service;
